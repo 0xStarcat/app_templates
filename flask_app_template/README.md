@@ -1,9 +1,7 @@
-Very rudimentary Flask app template
+Boilerplate flask app w/ user auth and sqlite
 
-- with sqlite, SQLAlechemy & migrations
-
-1) run `flask db init`
-2) Adjust the models to your preference and run migrations with `flask db migrate -m "<migration name>"`
-  - comes with a related user and post example
-3) Comes with a few view templates
-4) Also comes with `flask shell` configured and a `.flaskenv` file. be sure to add it to `.gitignore`
+1) enter venv and `pip install requirements.txt`
+2) add database URL to `.flaskenv`
+3) init db with `flask db init`
+4) adjust models.py, create migrations, etc with `flask db migrate -m "migration message"`
+5) migrate with `flask db upgrade`
