@@ -4,7 +4,7 @@ FLASK_ENV=development
 FLASK_DEBUG=1
 
 SECRET_KEY=not-that-secret
-DATABASE_URL=sqlite:////absolute/path/to/db
+DATABASE_URL=sqlite://///home/angel/code/app_templates/flask_app_template/app.db
 
 MAIL_SERVER=smtp.googlemail.com
 MAIL_PORT=587
