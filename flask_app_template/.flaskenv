@@ -8,7 +8,7 @@ DATABASE_URL=sqlite:////absolute/path/to/db
 
 MAIL_SERVER=smtp.googlemail.com
 MAIL_PORT=587
-MAIL_USE_TLS=1
+MAIL_USE_TLS=True
 MAIL_USERNAME=
 MAIL_PASSWORD=
 

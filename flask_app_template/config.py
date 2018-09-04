@@ -11,7 +11,7 @@ class Config(object):
         'FLASK_ENV') == 'production' else os.environ.get('DEV_MAIL_SERVER')
     MAIL_PORT = int(os.environ.get('MAIL_PORT') if os.environ.get('FLASK_ENV')
                     == 'production' else os.environ.get('DEV_MAIL_PORT') or 25)
-    MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
+    MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') == 'True' and os.environ.get('FLASK_DEBUG') == '0'
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['your-email@example.com']
