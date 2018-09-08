@@ -1,0 +1,11 @@
+venv
+__pycache__
+.env
+
+app.dev.db
+app.test.db
+Dockerfile
+docker-compose.yml
+docker-compose.dev.yml
+docker-compose.prod.yml
+logs
